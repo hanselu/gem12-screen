@@ -10,6 +10,7 @@
 
 - 自动识别 `VID_0416&PID_90A1` 对应的屏幕串口；
 - 以 1,500,000 波特率发送开屏命令；
+- 发送关屏命令并验证设备响应；
 - 将 960×376 RGB 图片转换成小端 RGB565；
 - 按当前 AOOSTAR-X 协议发送完整画面；
 - 连续显示两张不同的官方背景图；
@@ -17,10 +18,13 @@
 
 当前实现位于：
 
-- `gem12_screen.py`：设备识别、编码及串口协议；
-- `main.py`：命令行入口；
-- `assets/backgrounds`：独立程序自带的 8 张 960×376 背景图；
-- `tests/test_protocol.py`：RGB565 和数据分块测试。
+- `gem12_screen/screen.py`：对外的 `Screen` 高层控制接口；
+- `gem12_screen/_protocol.py`：内部图像编码和串口协议实现；
+- `gem12_screen/cli.py`：命令行入口；
+- `gem12_screen/assets/backgrounds`：随包安装的 8 张 960×376 背景图；
+- `examples/show_image.py`：只使用公共接口的调用示例；
+- `tests/test_protocol.py`：RGB565 和数据分块测试；
+- `tests/test_screen.py`：公共 API、完整传图和异常关闭测试。
 
 ## 2. 分析范围与证据等级
 
@@ -63,7 +67,7 @@
   - 同目录还包含 Linux 程序和用户主题资源。
 - `AOOSTAR-FAN_001/background`
   - 包含 8 张 960×376 JPEG 背景图；
-  - 已将 8 张图片原样复制到工程的 `assets/backgrounds`，统一命名为 `background-01.jpg` 至 `background-08.jpg`；
+  - 已将 8 张图片原样复制到包内的 `gem12_screen/assets/backgrounds`，统一命名为 `background-01.jpg` 至 `background-08.jpg`；
   - 运行时不再读取已被 Git 忽略的 `reference` 目录。
 
 旧版程序中存在 `HidLibrary.dll` 和名为 `USBHIDCommunication` 的类，但其枚举目标是 `046D:C542`，而且没有进入实际屏幕发送链路。不能据此把屏幕误判为 HID 设备。
@@ -161,7 +165,15 @@ AA 55 AA 55 0B 00 00 00
 
 即 ASCII 字符 `A`。
 
-### 6.2 开始传图
+### 6.2 关屏
+
+```text
+AA 55 AA 55 0A 00 00 00
+```
+
+真机发送结果为 8 字节完整写入，设备返回 `41`，随后由人工确认屏幕已经熄灭。
+
+### 6.3 开始传图
 
 ```text
 AA 55 AA 55 05 00 00 00 04 00 0F 2F 00 04 0B 00
@@ -169,7 +181,7 @@ AA 55 AA 55 05 00 00 00 04 00 0F 2F 00 04 0B 00
 
 后 8 字节来自官方程序中的 LVGL 图像头和区域参数。当前实现按已验证常量原样发送，不对其尚未完全确认的字段语义作进一步推断。
 
-### 6.3 图像数据块
+### 6.4 图像数据块
 
 每个数据包的格式为：
 
@@ -196,13 +208,13 @@ AA 55 AA 55 08 00 00 00
 
 47 可以整除当前画面数据量，所以完整 960×376 画面没有不足 47 字节的尾块。
 
-### 6.4 结束传图
+### 6.5 结束传图
 
 ```text
 AA 55 AA 55 06 00 00 00
 ```
 
-### 6.5 完整发送顺序
+### 6.6 完整发送顺序
 
 ```text
 打开 COM 口
@@ -251,7 +263,7 @@ high_byte = pixel >> 8
 
 图片不是 960×376 时，当前程序使用 Pillow 的 Lanczos 重采样缩放到目标尺寸。它不会自动裁剪，因此宽高比不同的图片会发生拉伸。
 
-## 8. Python 实现与使用
+## 8. Python 封装与使用
 
 ### 8.1 环境
 
@@ -266,60 +278,126 @@ high_byte = pixel >> 8
 uv sync
 ```
 
-### 8.2 显示默认官方背景图
+### 8.2 在自己的程序中调用
+
+上层程序只需导入 `Screen`，不需要接触串口号、波特率、命令字、RGB565 或分块规则：
+
+```python
+from gem12_screen import Screen
+
+with Screen.connect() as screen:
+    screen.show("picture.jpg")
+```
+
+`Screen.connect()` 会完成以下操作：
+
+1. 按 VID/PID 自动寻找目标屏幕；
+2. 打开串口；
+3. 发送开屏命令；
+4. 验证屏幕是否返回 ASCII `A`。
+
+`screen.show()` 接受文件路径或 Pillow `Image` 对象，并返回本次发送的数据块数量。退出 `with` 后只关闭串口连接，不会关屏或清除画面。
+
+也可以显式指定端口，但仍会校验 VID/PID：
+
+```python
+with Screen.connect("COM3") as screen:
+    screen.show("picture.jpg")
+```
+
+所有可预期的连接、响应和图片读取错误统一抛出 `ScreenError`：
+
+```python
+from gem12_screen import Screen, ScreenError
+
+try:
+    with Screen.connect() as screen:
+        screen.show("picture.jpg")
+except ScreenError as exc:
+    print(f"屏幕控制失败：{exc}")
+```
+
+关闭屏幕时使用 `turn_off()`。传入 `wake=False` 可以只建立串口连接，避免在关屏前先发送开屏命令：
+
+```python
+with Screen.connect(wake=False) as screen:
+    screen.turn_off()
+```
+
+`turn_off()` 使用已经过真机验证的 `AA 55 AA 55 0A 00 00 00` 命令，并要求设备返回 ASCII `A`。不要用 `close()` 代替关屏：`close()` 只释放串口句柄，屏幕会继续保持当前状态。
+
+### 8.3 运行 Demo
+
+`examples/show_image.py` 是最小调用示例：
+
+```powershell
+uv run python examples/show_image.py
+```
+
+Demo 使用 `Screen.connect()` 和 `screen.show()` 显示包内的 `background-02.jpg`，不直接调用任何内部协议函数。
+
+### 8.4 使用命令行
 
 先退出官方 AOOSTAR-X，避免它占用同一个串口，然后在项目目录运行：
 
 ```powershell
-uv run python main.py
+uv run gem12-screen
 ```
 
 默认图片为：
 
 ```text
-assets\backgrounds\background-01.jpg
+gem12_screen\assets\backgrounds\background-01.jpg
 ```
 
-### 8.3 显示指定图片
+显示指定图片：
 
 ```powershell
-uv run python main.py --image "D:\Pictures\screen.jpg"
+uv run gem12-screen --image "D:\Pictures\screen.jpg"
 ```
 
 显示工程自带的第 2 张背景图：
 
 ```powershell
-uv run python main.py --image ".\assets\backgrounds\background-02.jpg"
+uv run gem12-screen --image ".\gem12_screen\assets\backgrounds\background-02.jpg"
 ```
 
-### 8.4 只发送开屏命令
+只发送开屏命令：
 
 ```powershell
-uv run python main.py --open-only
+uv run gem12-screen --open-only
 ```
 
-### 8.5 显式指定串口
+关闭屏幕：
 
 ```powershell
-uv run python main.py --port COM3 --image ".\picture.jpg"
+uv run gem12-screen --turn-off
+```
+
+显式指定串口：
+
+```powershell
+uv run gem12-screen --port COM3 --image ".\picture.jpg"
 ```
 
 即使指定了 `COM3`，程序仍要求该端口的 VID/PID 是 `0416:90A1`。
 
 ## 9. 代码结构
 
-`gem12_screen.py` 中的主要入口：
+包内文件和接口：
 
 | 名称 | 作用 |
 |---|---|
-| `find_screen_port()` | 按 VID/PID 查找并校验屏幕串口 |
-| `prepare_image()` | 转成 RGB 并缩放到 960×376 |
-| `encode_rgb565_le()` | 转换为小端 RGB565 字节流 |
-| `iter_data_packets()` | 生成带偏移的 47 字节数据包 |
-| `Gem12Screen.open_screen()` | 发送开屏命令并读取响应 |
-| `Gem12Screen.show_image()` | 发送一幅完整画面 |
+| `Screen.connect()` | 查找设备、打开串口并验证开屏响应 |
+| `Screen.show()` | 读取并发送一幅图片 |
+| `Screen.wake()` | 重新发送开屏命令并验证响应 |
+| `Screen.turn_off()` | 发送关屏命令并验证响应 |
+| `Screen.close()` | 关闭串口连接，不关闭屏幕 |
+| `Screen.port` | 实际连接的串口名 |
+| `Screen.is_connected` | 当前串口连接状态 |
+| `_protocol.py` | 不对上层公开的协议常量、编码和分块实现 |
 
-`Gem12Screen` 使用上下文管理器关闭串口句柄，但不会在退出时发送关屏命令，因此脚本结束后画面会继续保留。
+包的公开入口 `gem12_screen/__init__.py` 只导出 `Screen` 和 `ScreenError`。调用方不应依赖 `_protocol.py` 中以下划线开头的内部实现。
 
 ## 10. 旧版协议线索
 
@@ -351,6 +429,15 @@ uv run python main.py --port COM3 --image ".\picture.jpg"
 - 开屏响应：`41`；
 - 数据块：15,360；
 - 人工结果：已正确切换为指定图片。
+
+### 关屏验证
+
+- 测试前状态：屏幕正在显示画面；
+- 命令：`AA 55 AA 55 0A 00 00 00`；
+- 串口：COM3；
+- 写入长度：8 字节；
+- 设备响应：`41`；
+- 人工结果：屏幕已熄灭。
 
 离线测试同时验证了 RGB565 字节序和数据块偏移。当前测试命令：
 

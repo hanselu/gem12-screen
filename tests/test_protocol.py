@@ -4,7 +4,7 @@ import unittest
 
 from PIL import Image
 
-from gem12_screen import DATA_HEADER, encode_rgb565_le, iter_data_packets
+from gem12_screen._protocol import DATA_HEADER, encode_rgb565_le, iter_data_packets
 
 
 class ProtocolTests(unittest.TestCase):
