@@ -1,0 +1,10 @@
+[project]
+name = "gem12-screen"
+version = "0.1.0"
+description = "AOOSTAR GEM12 screen controller"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=11.0",
+    "pyserial>=3.5",
+]
