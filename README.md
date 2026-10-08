@@ -16,7 +16,14 @@ uv add gem12-screen
 uv sync
 ```
 
-发行包只包含屏控，触控仍为仓库内实验代码。稳定调用入口为 `Screen` 和 `ScreenError`，详见[屏幕公共接口](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/屏幕公共接口.md)；版本发布、GitHub／PyPI 安装和发布配置见[发布与复用](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/发布与复用.md)。
+GitHub 仓库保持 `hanselu/gem12-screen`，两个功能规划为独立的 PyPI 包：
+
+| PyPI 包名 | Python 导入名 | 发布状态 |
+|---|---|---|
+| `gem12-screen` | `gem12_screen` | 当前准备发布，仅包含屏控 |
+| `gem12_touch` | `gem12_touch` | 实验阶段，暂不发布 |
+
+当前发行包只包含屏控，触控仍为仓库内实验代码。稳定调用入口为 `Screen` 和 `ScreenError`，详见[屏幕公共接口](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/屏幕公共接口.md)；版本发布、GitHub／PyPI 安装和发布配置见[发布与复用](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/发布与复用.md)。
 
 屏控代码可移植，当前真机验证仅覆盖 Windows；Linux/macOS 的串口驱动、权限及参数兼容性仍待实测。包内包含自行绘制的 9 张 960×376 示例图片，编号为 `01.jpg`～`09.jpg`，涵盖渐变、色条、网格、几何图形及模拟仪表。
 
