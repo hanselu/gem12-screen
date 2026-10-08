@@ -53,6 +53,7 @@ class Screen:
     def __init__(self, port: str, connection: serial.Serial) -> None:
         self.port = port
         self._serial = connection
+        self._previous_frame: bytes | None = None
 
     @classmethod
     def connect(cls, port: str | None = None, *, wake: bool = True) -> Screen:
@@ -97,6 +98,7 @@ class Screen:
 
     def close(self) -> None:
         """关闭串口连接，不关闭屏幕或清除当前画面。"""
+        self._previous_frame = None
         if self._serial.is_open:
             self._serial.close()
 
@@ -110,6 +112,7 @@ class Screen:
 
     def _send_control_command(self, command: bytes, action: str) -> None:
         self._require_connection()
+        self._previous_frame = None
         try:
             self._serial.reset_input_buffer()
             self._write_exact(command)
@@ -121,8 +124,8 @@ class Screen:
             response_text = response.hex(" ") or "无响应"
             raise ScreenError(f"{action}时屏幕没有返回预期响应 41，实际为：{response_text}")
 
-    def show(self, source: str | Path | Image.Image) -> int:
-        """显示图片并返回发送的数据块数量。"""
+    def show(self, source: str | Path | Image.Image, *, force_full: bool = False) -> int:
+        """显示图片并返回发送的块数；默认差分刷新，可强制发送整帧。"""
         self._require_connection()
         image = self._load_image(source)
         image_data = encode_rgb565_le(prepare_image(image))
@@ -130,16 +133,23 @@ class Screen:
         if len(image_data) != expected_size:
             raise ScreenError(f"图像编码长度异常：{len(image_data)}，预期 {expected_size}")
 
+        previous_frame = None if force_full else self._previous_frame
+        # 开始写入后缓存不再可信，直到整帧流程及响应读取都成功。
+        self._previous_frame = None
         try:
             self._write_exact(FRAME_START)
             packet_count = 0
-            for packet in iter_data_packets(image_data):
+            for packet in iter_data_packets(image_data, previous_frame):
                 self._write_exact(packet)
                 packet_count += 1
             self._write_exact(FRAME_END)
             self._serial.flush()
+            waiting = self._serial.in_waiting
+            if waiting:
+                self._serial.read(waiting)
         except serial.SerialException as exc:
             raise ScreenError(f"画面发送失败：{exc}") from exc
+        self._previous_frame = image_data
         return packet_count
 
     def _load_image(self, source: str | Path | Image.Image) -> Image.Image:

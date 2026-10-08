@@ -1,0 +1,149 @@
+{
+  "port": "COM3",
+  "frames": [
+    {
+      "frame": 0,
+      "chunks": 15360,
+      "total_seconds": 1.696292
+    },
+    {
+      "frame": 1,
+      "chunks": 970,
+      "total_seconds": 0.2281
+    },
+    {
+      "frame": 2,
+      "chunks": 528,
+      "total_seconds": 0.21079
+    },
+    {
+      "frame": 3,
+      "chunks": 834,
+      "total_seconds": 0.256493
+    },
+    {
+      "frame": 4,
+      "chunks": 897,
+      "total_seconds": 0.25128
+    },
+    {
+      "frame": 5,
+      "chunks": 565,
+      "total_seconds": 0.218076
+    },
+    {
+      "frame": 6,
+      "chunks": 0,
+      "total_seconds": 0.206101
+    },
+    {
+      "frame": 7,
+      "chunks": 1004,
+      "total_seconds": 0.340468
+    },
+    {
+      "frame": 8,
+      "chunks": 970,
+      "total_seconds": 0.253726
+    },
+    {
+      "frame": 9,
+      "chunks": 528,
+      "total_seconds": 0.215498
+    },
+    {
+      "frame": 10,
+      "chunks": 834,
+      "total_seconds": 0.236057
+    },
+    {
+      "frame": 11,
+      "chunks": 897,
+      "total_seconds": 0.283857
+    },
+    {
+      "frame": 12,
+      "chunks": 565,
+      "total_seconds": 0.228117
+    },
+    {
+      "frame": 13,
+      "chunks": 0,
+      "total_seconds": 0.161358
+    },
+    {
+      "frame": 14,
+      "chunks": 15360,
+      "total_seconds": 1.70191
+    },
+    {
+      "frame": 15,
+      "chunks": 970,
+      "total_seconds": 0.26081
+    },
+    {
+      "frame": 16,
+      "chunks": 528,
+      "total_seconds": 0.276225
+    },
+    {
+      "frame": 17,
+      "chunks": 834,
+      "total_seconds": 0.245099
+    },
+    {
+      "frame": 18,
+      "chunks": 897,
+      "total_seconds": 0.245998
+    },
+    {
+      "frame": 19,
+      "chunks": 565,
+      "total_seconds": 0.215164
+    },
+    {
+      "frame": 20,
+      "chunks": 0,
+      "total_seconds": 0.156545
+    },
+    {
+      "frame": 21,
+      "chunks": 1004,
+      "total_seconds": 0.264092
+    },
+    {
+      "frame": 22,
+      "chunks": 970,
+      "total_seconds": 0.330386
+    },
+    {
+      "frame": 23,
+      "chunks": 528,
+      "total_seconds": 0.231077
+    },
+    {
+      "frame": 24,
+      "chunks": 834,
+      "total_seconds": 0.242558
+    },
+    {
+      "frame": 25,
+      "chunks": 897,
+      "total_seconds": 0.255441
+    },
+    {
+      "frame": 26,
+      "chunks": 565,
+      "total_seconds": 0.235035
+    },
+    {
+      "frame": 27,
+      "chunks": 0,
+      "total_seconds": 0.161255
+    }
+  ],
+  "force_full_chunks": 15360,
+  "final_unchanged_chunks": 0,
+  "visual_confirmation": "用户确认显示正常，没有残留或异常",
+  "date": "2026-10-09"
+}

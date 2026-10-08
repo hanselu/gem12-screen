@@ -38,7 +38,9 @@ def encode_rgb565_le(image: Image.Image) -> bytes:
     return bytes(encoded)
 
 
-def iter_data_packets(image_data: bytes) -> Iterator[bytes]:
+def iter_data_packets(image_data: bytes, previous_data: bytes | None = None) -> Iterator[bytes]:
     for offset in range(0, len(image_data), DATA_CHUNK_SIZE):
         payload = image_data[offset : offset + DATA_CHUNK_SIZE]
+        if previous_data is not None and payload == previous_data[offset : offset + DATA_CHUNK_SIZE]:
+            continue
         yield DATA_HEADER + offset.to_bytes(4, "little") + payload
