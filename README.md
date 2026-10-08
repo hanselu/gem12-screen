@@ -4,7 +4,7 @@
 
 ## 安装
 
-要求 Python 3.12 及以上。首个 PyPI 版本发布完成后，在其他项目中安装：
+要求 Python 3.12 及以上。`0.1.0` 已发布至 [PyPI](https://pypi.org/project/gem12-screen/0.1.0/)，对应 [GitHub Release v0.1.0](https://github.com/hanselu/gem12-screen/releases/tag/v0.1.0)。在其他项目中安装：
 
 ```powershell
 uv add gem12-screen
@@ -20,7 +20,7 @@ GitHub 仓库保持 `hanselu/gem12-screen`，两个功能规划为独立的 PyPI
 
 | PyPI 包名 | Python 导入名 | 发布状态 |
 |---|---|---|
-| `gem12-screen` | `gem12_screen` | 当前准备发布，仅包含屏控 |
+| `gem12-screen` | `gem12_screen` | 已发布 `0.1.0`，仅包含屏控 |
 | `gem12_touch` | `gem12_touch` | 实验阶段，暂不发布 |
 
 当前发行包只包含屏控，触控仍为仓库内实验代码。稳定调用入口为 `Screen` 和 `ScreenError`，详见[屏幕公共接口](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/屏幕公共接口.md)；版本发布、GitHub／PyPI 安装和发布配置见[发布与复用](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/发布与复用.md)。
