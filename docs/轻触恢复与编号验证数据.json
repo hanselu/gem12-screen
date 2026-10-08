@@ -1,0 +1,3231 @@
+{
+  "date": "2026-10-09",
+  "user_log": {
+    "path": "轻触通知停止用户日志.txt",
+    "notices": [
+      {
+        "sequence": 1,
+        "unit_id": 3,
+        "timestamp": 10923.75
+      },
+      {
+        "sequence": 2,
+        "unit_id": 3,
+        "timestamp": 10924.921
+      },
+      {
+        "sequence": 3,
+        "unit_id": 3,
+        "timestamp": 10925.64
+      },
+      {
+        "sequence": 4,
+        "unit_id": 3,
+        "timestamp": 10926.203
+      },
+      {
+        "sequence": 5,
+        "unit_id": 3,
+        "timestamp": 10928.015
+      },
+      {
+        "sequence": 6,
+        "unit_id": 3,
+        "timestamp": 10930.687
+      },
+      {
+        "sequence": 7,
+        "unit_id": 3,
+        "timestamp": 10935.765
+      },
+      {
+        "sequence": 8,
+        "unit_id": 3,
+        "timestamp": 10938.671
+      },
+      {
+        "sequence": 9,
+        "unit_id": 3,
+        "timestamp": 10940.375
+      },
+      {
+        "sequence": 10,
+        "unit_id": 3,
+        "timestamp": 10941.203
+      },
+      {
+        "sequence": 11,
+        "unit_id": 3,
+        "timestamp": 10942.859
+      },
+      {
+        "sequence": 12,
+        "unit_id": 3,
+        "timestamp": 10943.609
+      },
+      {
+        "sequence": 13,
+        "unit_id": 3,
+        "timestamp": 10944.234
+      },
+      {
+        "sequence": 14,
+        "unit_id": 3,
+        "timestamp": 10946.578
+      },
+      {
+        "sequence": 15,
+        "unit_id": 3,
+        "timestamp": 10948.5
+      },
+      {
+        "sequence": 16,
+        "unit_id": 3,
+        "timestamp": 10949.953
+      }
+    ],
+    "last_operation_was_hold": "Unknown",
+    "timeouts_after_last_notice": 21,
+    "all_post_notice_callback_counts": [
+      16,
+      16
+    ],
+    "unregister_hresult": "0x00000000",
+    "unregister_seconds_reported": 0,
+    "close_hresult": "0x00000000",
+    "close_seconds": 10.016
+  },
+  "cancel_reconnect_experiment": {
+    "date": "2026-10-09",
+    "steps": [
+      {
+        "step": "WinBioOpenSession",
+        "phase": "observe",
+        "seconds": 0.048934,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "observe",
+        "seconds": 0.000105,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCancel",
+        "phase": "cancel",
+        "seconds": 0.000207,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "reconnect",
+        "seconds": 6.9e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "reconnect",
+        "seconds": 9.999562,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioOpenSession",
+        "phase": "reconnect",
+        "seconds": 16.887866,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "reconnect",
+        "seconds": 8.3e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "cleanup",
+        "seconds": 0.000219,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "cleanup",
+        "seconds": 0.043034,
+        "hresult": "0x00000000"
+      }
+    ],
+    "events": [
+      {
+        "phase": "observe",
+        "elapsed_seconds": 26.502294,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 27.684371,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 28.889998,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 30.195898,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 31.14251,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 33.035856,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 34.012335,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 36.145113,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 46.916545,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 48.66042,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 50.484038,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 51.769763,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 52.696521,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 53.991803,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 104.722002,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 106.993138,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 166.659888,
+        "error": "触摸通知失败：HRESULT 0x80098004"
+      }
+    ],
+    "snapshots": [
+      {
+        "phase": "observe",
+        "elapsed_seconds": 0.621317,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 1.623648,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 2.625802,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 3.628546,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 4.63092,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 5.633394,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 6.635523,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 7.637173,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 8.63879,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 9.6421,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 10.643747,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 11.646143,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 12.648578,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 13.650553,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 14.653545,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 15.655169,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 16.657031,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 17.659004,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 18.661704,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 19.663653,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 20.665666,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 21.668162,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 22.670684,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 23.673332,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 24.674465,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 25.67585,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 27.017638,
+        "callbacks_started": 1,
+        "callbacks_finished": 1
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 28.185871,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 29.391589,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 30.698369,
+        "callbacks_started": 4,
+        "callbacks_finished": 4
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 32.144812,
+        "callbacks_started": 5,
+        "callbacks_finished": 5
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 33.536994,
+        "callbacks_started": 6,
+        "callbacks_finished": 6
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 35.014075,
+        "callbacks_started": 7,
+        "callbacks_finished": 7
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 36.016437,
+        "callbacks_started": 7,
+        "callbacks_finished": 7
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 37.147045,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 38.150308,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 39.152229,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 40.154267,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 41.155993,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 42.158655,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 43.161471,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 44.163981,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 45.166461,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 46.168351,
+        "callbacks_started": 8,
+        "callbacks_finished": 8
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 47.418933,
+        "callbacks_started": 9,
+        "callbacks_finished": 9
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 48.4215,
+        "callbacks_started": 9,
+        "callbacks_finished": 9
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 49.662961,
+        "callbacks_started": 10,
+        "callbacks_finished": 10
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 50.985302,
+        "callbacks_started": 11,
+        "callbacks_finished": 11
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 52.271497,
+        "callbacks_started": 12,
+        "callbacks_finished": 12
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 53.699702,
+        "callbacks_started": 13,
+        "callbacks_finished": 13
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 54.993509,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 55.99577,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 56.998686,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 58.001042,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 59.003509,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 60.005113,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 61.007761,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 62.010061,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 63.012973,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 64.01572,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 65.018404,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 66.02088,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 67.022922,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 68.025842,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 69.028573,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 70.031215,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 71.034181,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 72.036218,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 73.038884,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 74.040746,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 75.043667,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 76.046078,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 77.049352,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 78.052688,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 79.054694,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 80.057352,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 81.059646,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 82.061755,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 83.065275,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 84.068284,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 85.070753,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 86.072684,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 87.074088,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 88.07601,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 89.079447,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 90.08193,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 91.08554,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 92.087552,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 93.089512,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 94.091106,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 95.093478,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 96.096884,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 97.100597,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 98.102639,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 99.105164,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 100.106925,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 101.108966,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 102.111967,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 103.115461,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 104.118989,
+        "callbacks_started": 14,
+        "callbacks_finished": 14
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 105.223437,
+        "callbacks_started": 15,
+        "callbacks_finished": 15
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 106.225756,
+        "callbacks_started": 15,
+        "callbacks_finished": 15
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 107.494972,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 108.497017,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 109.500078,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 110.502554,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 111.504216,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 112.506598,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 113.509178,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 114.511993,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 115.515191,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 116.517247,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 117.519916,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 118.522208,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 119.524072,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 120.526683,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 121.530438,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 122.532909,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 123.536083,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 124.538008,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 125.541436,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 126.543815,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 127.546763,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 128.549401,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 129.552104,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 130.554057,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 131.556899,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 132.559721,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 133.56282,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 134.567188,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 135.570163,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 136.572777,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 137.575756,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 138.578015,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 139.580479,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 140.585629,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 141.587501,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 142.589566,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 143.592687,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 144.595864,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 145.599165,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 146.601211,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 147.603995,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 148.606647,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 149.609054,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 150.612148,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 151.616074,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 152.618637,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 153.621886,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 154.624488,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 155.626789,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 156.629617,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 157.63277,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 158.634911,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 159.637457,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 160.640025,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 161.641748,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 162.643866,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 163.646027,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 164.649116,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 165.651889,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 166.654957,
+        "callbacks_started": 16,
+        "callbacks_finished": 16
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 167.661703,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 168.665048,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 169.667711,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 170.669667,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 171.672298,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 172.675591,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 173.677912,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 174.681204,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 175.684407,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 176.686878,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 177.689634,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 178.692763,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 179.695785,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 180.699315,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 181.702114,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 182.704093,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 183.706598,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 184.709771,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 185.713413,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 186.717817,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 187.721752,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 188.724137,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 189.728066,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 190.73203,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 191.734558,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 192.738329,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 193.741517,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 194.743818,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 195.746349,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 196.750358,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 197.753197,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 198.756876,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 199.760033,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 200.763236,
+        "callbacks_started": 17,
+        "callbacks_finished": 17
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 228.165455,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 229.16904,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 230.171889,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 231.17582,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 232.17934,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 233.184122,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 234.188016,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 235.192224,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 236.195037,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 237.199248,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 238.20274,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 239.207657,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 240.211967,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 241.216837,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 242.220589,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 243.223609,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 244.225811,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 245.22856,
+        "callbacks_started": 1,
+        "callbacks_finished": 1
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 246.231971,
+        "callbacks_started": 1,
+        "callbacks_finished": 1
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 247.234908,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 248.237237,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 249.241578,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 250.243804,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 251.247928,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 252.25158,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 253.254659,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 254.258422,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 255.261093,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 256.263754,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 257.267832,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 258.27056,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 259.273639,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 260.276253,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 261.280025,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 262.283256,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 263.2859,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 264.288589,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 265.291416,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 266.294929,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 267.297531,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 268.301414,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 269.30423,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 270.307641,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 271.310717,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 272.314129,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 273.318128,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 274.320461,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 275.323697,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 276.326828,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 277.329426,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 278.333846,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 279.336687,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 280.339957,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 281.34292,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 282.346577,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 283.351616,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 284.35436,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 285.357384,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 286.359983,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 287.36277,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 288.367043,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 289.370357,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 290.373785,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 291.377365,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 292.379708,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 293.382411,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 294.385796,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 295.388595,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 296.391785,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 297.394603,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 298.398734,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 299.402653,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 300.407826,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 301.413003,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 302.41752,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 303.421924,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 304.425011,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 305.428594,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 306.432833,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 307.436692,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 308.441138,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 309.443672,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 310.447873,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 311.451805,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 312.455954,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 313.459887,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 314.462888,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 315.466982,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 316.46991,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 317.474212,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 318.476832,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 319.480697,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 320.483597,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 321.488633,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 322.492981,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 323.497185,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 324.501637,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 325.506715,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 326.509854,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 327.51359,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 328.517816,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 329.522023,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 330.526986,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 331.530194,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 332.533219,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 333.537658,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 334.541817,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 335.545992,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 336.549684,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 337.554109,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 338.559279,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 339.562637,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 340.565687,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 341.569694,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 342.573905,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 343.5771,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 344.580867,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 345.584018,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 346.58704,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 347.591668,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 348.595986,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 349.599048,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 350.601821,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 351.605831,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 352.6093,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 353.613291,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 354.61649,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 355.619872,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 356.623649,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 357.627204,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 358.631766,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 359.634557,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 360.63761,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 361.64165,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 362.645355,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 363.649843,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 364.653194,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 365.657013,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 366.661125,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 367.66513,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 368.66902,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 369.673241,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 370.675639,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 371.680673,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 372.686946,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 373.692955,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 374.697561,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      }
+    ],
+    "phases": [
+      {
+        "phase": "check_stall",
+        "elapsed_seconds": 90.584305
+      },
+      {
+        "phase": "cancel",
+        "elapsed_seconds": 166.656518
+      },
+      {
+        "phase": "reconnect",
+        "elapsed_seconds": 200.765629
+      }
+    ],
+    "status": "completed",
+    "elapsed_seconds": 374.755255
+  },
+  "fresh_unit_id_experiment": {
+    "date": "2026-10-09",
+    "steps": [
+      {
+        "step": "WinBioOpenSession",
+        "phase": "observe",
+        "seconds": 0.002045,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "observe",
+        "seconds": 7.2e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "cleanup",
+        "seconds": 0.000276,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "cleanup",
+        "seconds": 0.046068,
+        "hresult": "0x00000000"
+      }
+    ],
+    "events": [
+      {
+        "phase": "observe",
+        "elapsed_seconds": 49.770025,
+        "unit_id": 4,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 52.53002,
+        "unit_id": 4,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 55.539515,
+        "unit_id": 4,
+        "reject_detail": 0
+      }
+    ],
+    "raw_callbacks": [
+      {
+        "phase": "observe",
+        "elapsed_seconds": 49.769858,
+        "target_unit": 4,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 4,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 52.529931,
+        "target_unit": 4,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 4,
+        "reject_detail": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 55.539459,
+        "target_unit": 4,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 4,
+        "reject_detail": 0
+      }
+    ],
+    "snapshots": [
+      {
+        "phase": "observe",
+        "elapsed_seconds": 0.506225,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 1.507435,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 2.509557,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 3.511809,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 4.514629,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 5.516428,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 6.518632,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 7.521503,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 8.523902,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 9.5257,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 10.528372,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 11.531915,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 12.534088,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 13.537366,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 14.53982,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 15.541291,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 16.543381,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 17.546789,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 18.549738,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 19.551769,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 20.553488,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 21.555125,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 22.557778,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 23.55993,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 24.562139,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 25.56432,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 26.566457,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 27.569334,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 28.571594,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 29.573571,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 30.575194,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 31.576372,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 32.579889,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 33.581921,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 34.584866,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 35.586699,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 36.588185,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 37.590162,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 38.592242,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 39.594507,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 40.596957,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 41.599044,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 42.601806,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 43.604817,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 44.607,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 45.610021,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 46.612837,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 47.614612,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 48.616749,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 49.619919,
+        "callbacks_started": 0,
+        "callbacks_finished": 0
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 50.771974,
+        "callbacks_started": 1,
+        "callbacks_finished": 1
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 51.774134,
+        "callbacks_started": 1,
+        "callbacks_finished": 1
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 53.031572,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 54.033263,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 55.035848,
+        "callbacks_started": 2,
+        "callbacks_finished": 2
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 56.041543,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 57.043804,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 58.046066,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 59.048235,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 60.050667,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 61.053106,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 62.054621,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 63.055987,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 64.058182,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 65.060233,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 66.064106,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 67.066364,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 68.068949,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 69.071224,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 70.074024,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 71.077404,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 72.080102,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 73.082617,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 74.085122,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 75.087357,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 76.08991,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 77.091912,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 78.09443,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 79.097009,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 80.098646,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 81.100992,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 82.103378,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 83.105742,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 84.107908,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 85.11116,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 86.113331,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 87.115259,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 88.117464,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 89.119432,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 90.122005,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 91.125166,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 92.128354,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 93.130659,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 94.134339,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 95.137191,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 96.140098,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 97.142619,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 98.145068,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 99.147534,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 100.149269,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 101.153387,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 102.156181,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 103.158061,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 104.160098,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 105.162415,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 106.164359,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 107.168244,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 108.170721,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 109.173091,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 110.176215,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 111.180097,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 112.183224,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 113.186092,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 114.188322,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 115.19188,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 116.195942,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 117.200213,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 118.203939,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 119.207036,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 120.209737,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 121.214076,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 122.217464,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 123.219839,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 124.223906,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 125.226308,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 126.230548,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 127.232295,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 128.235879,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      },
+      {
+        "phase": "observe",
+        "elapsed_seconds": 129.239124,
+        "callbacks_started": 3,
+        "callbacks_finished": 3
+      }
+    ],
+    "phases": [],
+    "initial_unit_id": 4,
+    "status": "completed",
+    "elapsed_seconds": 129.291771
+  },
+  "windows_event_observations": {
+    "initial_window": "2026-10-09 02:05:30-02:06:40 Asia/Shanghai",
+    "event_ids": [
+      1600,
+      1108,
+      1108
+    ],
+    "secure_component_unavailable_error": "0x80070032",
+    "secure_component_unavailable_reason": 76,
+    "causal_relationship_to_stall": "Not established",
+    "microarray_creation_times_asia_shanghai": [
+      "02:05:35.9989511",
+      "02:07:18.1293745",
+      "02:12:08.7464682",
+      "02:15:57.6412636"
+    ]
+  },
+  "verification": {
+    "regression_case": "Simulated session initialization changes Unit ID from 3 to 4",
+    "before_fix": "Fails: selected stale Unit ID 3",
+    "after_fix": "Passes: selected Unit ID 4 and reads target notice",
+    "automated_tests_passed": 27,
+    "fixed_native_smoke_unit_id": 4,
+    "fixed_native_smoke_closed": true,
+    "original_stall_root_cause": "Unknown",
+    "cancel_did_not_eliminate_close_delay": true,
+    "service_before": {
+      "status": "Running",
+      "start_type": "Automatic"
+    },
+    "service_after": {
+      "status": "Running",
+      "start_type": "Automatic"
+    },
+    "service_driver_or_device_manually_restarted": false,
+    "screen_accessed": false
+  }
+}

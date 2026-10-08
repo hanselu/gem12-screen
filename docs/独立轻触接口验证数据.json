@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-09",
+  "api": "gem12_touch.FingerprintTouch",
+  "first_round": {
+    "date": "2026-10-09",
+    "events": [
+      {
+        "unit_id": 3,
+        "elapsed_seconds": 25.016,
+        "reject_detail": 0
+      },
+      {
+        "unit_id": 3,
+        "elapsed_seconds": 28.078,
+        "reject_detail": 0
+      }
+    ],
+    "status": "completed",
+    "unit_id": 3,
+    "stop_reason": "requested",
+    "first_listener_closed": true,
+    "repeat_close_succeeded": true,
+    "reconnected_unit_id": 3,
+    "reconnect_initial_event": null,
+    "second_listener_closed": true,
+    "elapsed_seconds": 39.188
+  },
+  "centered_repeat": {
+    "date": "2026-10-09",
+    "events": [
+      {
+        "unit_id": 3,
+        "elapsed_seconds": 35.766,
+        "reject_detail": 0
+      },
+      {
+        "unit_id": 3,
+        "elapsed_seconds": 39.813,
+        "reject_detail": 0
+      },
+      {
+        "unit_id": 3,
+        "elapsed_seconds": 44.141,
+        "reject_detail": 0
+      }
+    ],
+    "raw_callbacks": [
+      {
+        "elapsed_seconds": 35.766,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 0.0
+      },
+      {
+        "elapsed_seconds": 39.813,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 0.0
+      },
+      {
+        "elapsed_seconds": 44.141,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 0.0
+      }
+    ],
+    "status": "completed",
+    "unit_id": 3,
+    "stop_reason": "requested",
+    "first_listener_closed": true,
+    "repeat_close_succeeded": true,
+    "reconnected_unit_id": 3,
+    "reconnect_initial_event": null,
+    "second_listener_closed": true,
+    "elapsed_seconds": 55.266
+  },
+  "validation_context": {
+    "user_confirmed_touches_per_round": 3,
+    "first_round_missing_notice_cause": "Unknown; finger positioning suggested by user",
+    "service_before": {
+      "status": "Stopped",
+      "start_type": "Automatic"
+    },
+    "service_after_cleanup_verified": {
+      "status": "Stopped",
+      "start_type": "Automatic"
+    },
+    "service_restore": "User-authorized elevated Stop-Service WbioSrvc, exit code 0",
+    "automated_tests_passed": 23,
+    "wheel_built_and_verified": true,
+    "screen_accessed": false
+  }
+}

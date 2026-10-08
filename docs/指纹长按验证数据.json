@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-09",
+  "event_mask": "WINBIO_EVENT_FP_UNCLAIMED",
+  "steps": [
+    {
+      "step": "enum_units",
+      "hresult": "0x00000000"
+    },
+    {
+      "step": "open_session",
+      "hresult": "0x00000000"
+    },
+    {
+      "step": "register_events",
+      "hresult": "0x00000000"
+    },
+    {
+      "step": "unregister_events",
+      "hresult": "0x00000000"
+    },
+    {
+      "step": "close_session",
+      "hresult": "0x00000000"
+    }
+  ],
+  "events": [
+    {
+      "elapsed_seconds": 27.801,
+      "phase": "short",
+      "status": "0x00000000",
+      "type": "0x00000001",
+      "unit_id": 3,
+      "reject_detail": 0
+    },
+    {
+      "elapsed_seconds": 30.346,
+      "phase": "short",
+      "status": "0x00000000",
+      "type": "0x00000001",
+      "unit_id": 3,
+      "reject_detail": 0
+    },
+    {
+      "elapsed_seconds": 32.997,
+      "phase": "short",
+      "status": "0x00000000",
+      "type": "0x00000001",
+      "unit_id": 3,
+      "reject_detail": 0
+    },
+    {
+      "elapsed_seconds": 104.198,
+      "phase": "hold",
+      "status": "0x00000000",
+      "type": "0x00000001",
+      "unit_id": 3,
+      "reject_detail": 0
+    }
+  ],
+  "phases": [
+    {
+      "phase": "short",
+      "elapsed_seconds": 0.072
+    },
+    {
+      "phase": "quiet",
+      "elapsed_seconds": 50.207
+    },
+    {
+      "phase": "hold",
+      "elapsed_seconds": 81.711
+    }
+  ],
+  "units": [
+    {
+      "unit_id": 3,
+      "subtype": 2,
+      "capabilities": "0x00000007",
+      "description": "Microarray WBDI",
+      "is_target": true
+    }
+  ],
+  "status": "timed_out",
+  "elapsed_seconds": 190.157,
+  "validation_context": {
+    "user_confirmed_short_touches": 3,
+    "user_confirmed_holds_and_releases": 3,
+    "requested_hold_seconds": 3,
+    "requested_release_interval_seconds": 3,
+    "physical_down_up_timestamps_recorded": false,
+    "service_before": {
+      "status": "Stopped",
+      "start_type": "Automatic"
+    },
+    "service_after_cleanup_verified": {
+      "status": "Stopped",
+      "start_type": "Automatic"
+    },
+    "service_restore": "User-authorized elevated Stop-Service WbioSrvc, exit code 0",
+    "long_press_event_mapping": "Unknown; one event for three user-confirmed holds"
+  }
+}

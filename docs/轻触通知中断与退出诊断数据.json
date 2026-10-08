@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-09",
+  "user_report": {
+    "notice_timestamps": [
+      9493.765,
+      9496.468,
+      9497.375,
+      9497.859,
+      9498.296,
+      9499.656,
+      9500.562
+    ],
+    "seventh_operation": "Hold for approximately 2-3 seconds",
+    "subsequent_notifications": "None observed by user",
+    "ctrl_c_exit_seconds_estimate": 10
+  },
+  "spaced_round": {
+    "date": "2026-10-09",
+    "steps": [
+      {
+        "step": "WinBioEnumBiometricUnits",
+        "phase": "baseline",
+        "seconds": 0.075285,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioOpenSession",
+        "phase": "baseline",
+        "seconds": 0.048566,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "baseline",
+        "seconds": 9.9e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "baseline",
+        "seconds": 0.000131,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "baseline",
+        "seconds": 0.002146,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioEnumBiometricUnits",
+        "phase": "quiet",
+        "seconds": 0.00056,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioOpenSession",
+        "phase": "quiet",
+        "seconds": 0.000924,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "quiet",
+        "seconds": 4.5e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "cleanup",
+        "seconds": 0.00019,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "cleanup",
+        "seconds": 0.046024,
+        "hresult": "0x00000000"
+      }
+    ],
+    "callbacks": [
+      {
+        "phase": "before_hold",
+        "elapsed_seconds": 35.542548,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 0.00031239999952958897
+      },
+      {
+        "phase": "before_hold",
+        "elapsed_seconds": 38.151268,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 7.74000000092201e-05
+      },
+      {
+        "phase": "hold",
+        "elapsed_seconds": 69.120879,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 7.250000089698005e-05
+      },
+      {
+        "phase": "after_hold",
+        "elapsed_seconds": 97.841755,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 6.790000043110922e-05
+      },
+      {
+        "phase": "after_hold",
+        "elapsed_seconds": 101.070352,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 8.789999992586672e-05
+      }
+    ],
+    "reads": [
+      {
+        "phase": "before_hold",
+        "elapsed_seconds": 35.542924,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "before_hold",
+        "elapsed_seconds": 38.151381,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "hold",
+        "elapsed_seconds": 69.120978,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "after_hold",
+        "elapsed_seconds": 97.841855,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "after_hold",
+        "elapsed_seconds": 101.07047,
+        "unit_id": 3,
+        "reject_detail": 0
+      }
+    ],
+    "phases": [
+      {
+        "phase": "before_hold",
+        "elapsed_seconds": 22.162097
+      },
+      {
+        "phase": "hold",
+        "elapsed_seconds": 51.169308
+      },
+      {
+        "phase": "after_hold",
+        "elapsed_seconds": 83.138439
+      }
+    ],
+    "status": "completed",
+    "elapsed_seconds": 146.711696
+  },
+  "continuous_sequence_round": {
+    "date": "2026-10-09",
+    "steps": [
+      {
+        "step": "WinBioEnumBiometricUnits",
+        "phase": "baseline",
+        "seconds": 0.001741,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioOpenSession",
+        "phase": "baseline",
+        "seconds": 0.003456,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "baseline",
+        "seconds": 8.4e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "baseline",
+        "seconds": 0.00012,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "baseline",
+        "seconds": 0.095233,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioEnumBiometricUnits",
+        "phase": "quiet",
+        "seconds": 0.000859,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioOpenSession",
+        "phase": "quiet",
+        "seconds": 0.001189,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioRegisterEventMonitor",
+        "phase": "quiet",
+        "seconds": 8.1e-05,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioUnregisterEventMonitor",
+        "phase": "cleanup",
+        "seconds": 0.000249,
+        "hresult": "0x00000000"
+      },
+      {
+        "step": "WinBioCloseSession",
+        "phase": "cleanup",
+        "seconds": 0.045514,
+        "hresult": "0x00000000"
+      }
+    ],
+    "callbacks": [
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 29.18761,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 9.330000102636404e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 30.87211,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 7.14999987394549e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 33.094727,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 6.499999835796189e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 35.246511,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 6.940000093891285e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 37.139677,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 6.820000089646783e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 39.272174,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 5.229999987932388e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 41.114735,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 5.4200001613935456e-05
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 46.924719,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 0.00017140000090876129
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 49.604929,
+        "status": "0x00000000",
+        "type": 1,
+        "unit_id": 3,
+        "reject_detail": 0,
+        "callback_seconds": 6.479999865405262e-05
+      }
+    ],
+    "reads": [
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 29.187723,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 30.872209,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 33.094821,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 35.246618,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 37.139776,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 39.272238,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 41.114815,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 46.924927,
+        "unit_id": 3,
+        "reject_detail": 0
+      },
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 49.605026,
+        "unit_id": 3,
+        "reject_detail": 0
+      }
+    ],
+    "phases": [
+      {
+        "phase": "rapid_sequence",
+        "elapsed_seconds": 11.120119
+      }
+    ],
+    "status": "completed",
+    "elapsed_seconds": 118.238161
+  },
+  "conclusion": "Original notification stall and ten-second exit were not reproduced; cause remains unknown.",
+  "automated_tests_passed": 26,
+  "service_before_live_diagnosis": {
+    "status": "Stopped",
+    "start_type": "Automatic"
+  },
+  "service_after_cleanup_verified": {
+    "status": "Stopped",
+    "start_type": "Automatic"
+  },
+  "native_cancel_or_vendor_control_called": false,
+  "screen_accessed": false,
+  "service_restoration": "Already stopped on post-test external verification; no elevated stop required."
+}
