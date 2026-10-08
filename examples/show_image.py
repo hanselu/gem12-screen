@@ -7,8 +7,8 @@ IMAGE = (
     Path(__file__).resolve().parents[1]
     / "gem12_screen"
     / "assets"
-    / "backgrounds"
-    / "background-02.jpg"
+    / "example_images"
+    / "02.jpg"
 )
 
 

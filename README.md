@@ -4,9 +4,27 @@
 
 ## 安装
 
+要求 Python 3.12 及以上。首个 PyPI 版本发布完成后，在其他项目中安装：
+
+```powershell
+uv add gem12-screen
+```
+
+也可以使用 `pip install gem12-screen`。在本仓库开发或运行仓库示例时使用：
+
 ```powershell
 uv sync
 ```
+
+发行包只包含屏控，触控仍为仓库内实验代码。稳定调用入口为 `Screen` 和 `ScreenError`，详见[屏幕公共接口](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/屏幕公共接口.md)；版本发布、GitHub／PyPI 安装和发布配置见[发布与复用](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/发布与复用.md)。
+
+屏控代码可移植，当前真机验证仅覆盖 Windows；Linux/macOS 的串口驱动、权限及参数兼容性仍待实测。包内包含自行绘制的 9 张 960×376 示例图片，编号为 `01.jpg`～`09.jpg`，涵盖渐变、色条、网格、几何图形及模拟仪表。
+
+## 许可证
+
+本项目自行编写的代码及自行绘制的示例图片采用 [0BSD](https://github.com/hanselu/gem12-screen/blob/HEAD/LICENSE)（零条款 BSD）许可证，允许自由使用、复制、修改和分发，包括商业和闭源用途；不要求署名、保留许可证文本或公开修改源码。软件按原样提供，不提供担保。许可证标准文本见 [OSI](https://opensource.org/license/0bsd)。
+
+第三方依赖仍适用各自的许可。Pexels 照片仅保留在被 Git 忽略的本地测试目录 `local_test_images/pexels`，不随仓库或发行包分发。
 
 ## Python 调用
 
@@ -51,7 +69,7 @@ with Screen.connect() as screen:
 
 缓存属于当前连接。新连接、`wake()`、`turn_off()` 或发送／响应读取失败后，下一次 `show()` 都发送整帧。图片读取失败不会影响已有缓存，因为此时尚未向屏幕发送数据。失败会抛出 `ScreenError`，不会自动重试。
 
-模拟仪表 Demo：
+模拟仪表 Demo（需要取得仓库源码；`examples` 不随 wheel 安装）：
 
 ```powershell
 uv run python examples/show_dashboard.py
@@ -59,21 +77,23 @@ uv run python examples/show_dashboard.py
 
 Demo 约以每秒 2 次更新 CPU 文字、内存文字和进度条，运行 28 帧后结束，不采集真实硬件数据。关闭串口后屏幕保留最后一帧。
 
-差分刷新已通过当前设备的单次区域更新及 600 帧连续动态验证，均有目视确认。它仍编码完整图像，不能保证严格固定的刷新周期；数小时持续运行尚未验证。详见[差分刷新验证记录](docs/差分刷新验证记录.md)和[动态刷新验证记录](docs/动态刷新验证记录.md)。硬件拔插不作为本项目的测试或验收条件。
+差分刷新已通过当前设备的单次区域更新及 600 帧连续动态验证，均有目视确认。它仍编码完整图像，不能保证严格固定的刷新周期；数小时持续运行尚未验证。详见[差分刷新验证记录](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/差分刷新验证记录.md)和[动态刷新验证记录](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/动态刷新验证记录.md)。硬件拔插不作为本项目的测试或验收条件。
 
 ## Demo
 
-先退出官方 AOOSTAR-X，避免它占用屏幕串口，然后运行：
+在仓库源码目录中，先退出官方 AOOSTAR-X，避免它占用屏幕串口，然后运行：
 
 ```powershell
 uv run python examples/show_image.py
 ```
 
-Demo 显示包内的 `gem12_screen/assets/backgrounds/background-02.jpg`。
+Demo 显示包内的 `gem12_screen/assets/example_images/02.jpg`。
+
+示例图由 `scripts/generate_example_images.py` 使用数学公式、几何图形及 Pillow 内置字体绘制，不读取外部图片。在仓库中运行 `uv run python scripts/generate_example_images.py` 可重新生成全部示例图和总览图 `docs/example_images_preview.jpg`。
 
 ## 命令行
 
-显示默认背景图：
+显示默认示例图片：
 
 ```powershell
 uv run gem12-screen
@@ -97,11 +117,11 @@ uv run gem12-screen --open-only
 uv run gem12-screen --turn-off
 ```
 
-完整的探查记录、协议格式和实现说明见 [屏幕协议与 Python 驱动说明](docs/屏幕协议与Python驱动说明.md)。
+完整的探查记录、协议格式和实现说明见 [屏幕协议与 Python 驱动说明](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/屏幕协议与Python驱动说明.md)。
 
 ## 独立的指纹轻触监听（Windows）
 
-项目同时提供 `gem12_touch`，使用机器现有的 Microarray `3274:8012` 驱动监听不识别身份的指纹通知。它与 `gem12_screen` 独立：不导入屏控、串口或 Pillow，也不连接屏幕。安装包包含两个可分别使用的 Python 包。
+仓库保留实验模块 `gem12_touch`，使用机器现有的 Microarray `3274:8012` 驱动监听不识别身份的指纹通知。它与 `gem12_screen` 独立：不导入屏控、串口或 Pillow，也不连接屏幕。它暂不包含在 wheel 或源码发行包中，以下示例仅用于本仓库开发环境。
 
 ```python
 from gem12_touch import FingerprintTouch
@@ -127,12 +147,12 @@ uv run python examples/listen_touch.py
 uv run python examples/listen_touch.py --debug
 ```
 
-按 Ctrl+C 后会先显示关闭提示，再等待 Windows 注销监听和释放会话。同步清理可能等待系统返回；已有异常日志确认 `WinBioCloseSession` 耗时约 10 秒，不应视为固定正常耗时。通知停止的根因仍待排查，详见[通知中断与退出诊断](docs/轻触通知中断与退出诊断.md)。程序不会根据无通知时长自动重连，因为无法区分正常空闲与监听故障。
+按 Ctrl+C 后会先显示关闭提示，再等待 Windows 注销监听和释放会话。同步清理可能等待系统返回；已有异常日志确认 `WinBioCloseSession` 耗时约 10 秒，不应视为固定正常耗时。通知停止的根因仍待排查，详见[通知中断与退出诊断](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/轻触通知中断与退出诊断.md)。程序不会根据无通知时长自动重连，因为无法区分正常空闲与监听故障。
 
 Windows 重建设备后 Unit ID 可能变化。连接时会先打开会话，再枚举当前目标编号；诊断输出也会记录最近因编号不匹配而忽略的设备。此修正避免在会话初始化前固定旧编号，不等于已经修复所有通知中断。
 
 屏幕显示、页面切换等业务由调用方处理；不要放入系统回调。`read()` 和 `close()` 应由同一调用线程顺序使用，系统回调仅负责把通知放入队列。
 
-这里的“轻触”是本项目的使用方式，不是接口对接触时长的分类；长按也可能产生相同通知。没有长按判断或自动去重，也不保证每次接触必定产生一个事件。正式接口的测试及真机结果见[独立轻触接口验收](docs/独立轻触接口验证记录.md)，前期探索见[触摸事件记录](docs/指纹触摸事件验证记录.md)及[长按对照记录](docs/指纹长按验证记录.md)。
+这里的“轻触”是本项目的使用方式，不是接口对接触时长的分类；长按也可能产生相同通知。没有长按判断或自动去重，也不保证每次接触必定产生一个事件。正式接口的测试及真机结果见[独立轻触接口验收](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/独立轻触接口验证记录.md)，前期探索见[触摸事件记录](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/指纹触摸事件验证记录.md)及[长按对照记录](https://github.com/hanselu/gem12-screen/blob/HEAD/docs/指纹长按验证记录.md)。
 
 Windows 可能自动启动 `WbioSrvc`，关闭监听不会停止这个共享服务，也不需要以管理员权限运行示例。此功能不录入或识别指纹、不读取模板、不替换驱动。与 Windows Hello 的同时使用及长期运行尚未验证；应用在系统睡眠前应关闭监听，唤醒后重新连接，参见[微软事件监听说明](https://learn.microsoft.com/en-us/windows/win32/api/winbio/nf-winbio-winbioregistereventmonitor)。

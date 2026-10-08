@@ -7,7 +7,7 @@ from pathlib import Path
 from .screen import Screen, ScreenError
 
 
-DEFAULT_IMAGE = Path(__file__).resolve().parent / "assets" / "backgrounds" / "background-01.jpg"
+DEFAULT_IMAGE = Path(__file__).resolve().parent / "assets" / "example_images" / "01.jpg"
 
 
 def parse_args() -> argparse.Namespace:

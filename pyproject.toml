@@ -3,7 +3,16 @@ name = "gem12-screen"
 version = "0.1.0"
 description = "AOOSTAR GEM12 screen controller"
 readme = "README.md"
+license = "0BSD"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
+keywords = ["aoostar", "gem12", "screen", "usb", "serial"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Hardware",
+]
 dependencies = [
     "pillow>=11.0",
     "pyserial>=3.5",
@@ -12,9 +21,31 @@ dependencies = [
 [project.scripts]
 gem12-screen = "gem12_screen.cli:main"
 
+[project.urls]
+Repository = "https://github.com/hanselu/gem12-screen"
+Documentation = "https://github.com/hanselu/gem12-screen#readme"
+Issues = "https://github.com/hanselu/gem12-screen/issues"
+
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27.0"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["gem12_screen", "gem12_touch"]
+packages = ["gem12_screen"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/gem12_screen",
+    "/README.md",
+    "/pyproject.toml",
+    "/LICENSE*",
+    "/examples/show_image.py",
+    "/examples/show_dashboard.py",
+    "/examples/turn_off.py",
+    "/tests/test_protocol.py",
+    "/tests/test_screen.py",
+    "/scripts/verify_distribution.py",
+    "/scripts/generate_example_images.py",
+    "/docs/屏幕公共接口.md",
+    "/docs/发布与复用.md",
+]

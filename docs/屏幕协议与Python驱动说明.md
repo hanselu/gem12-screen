@@ -24,7 +24,7 @@
 - `gem12_screen/screen.py`：对外的 `Screen` 高层控制接口；
 - `gem12_screen/_protocol.py`：内部图像编码和串口协议实现；
 - `gem12_screen/cli.py`：命令行入口；
-- `gem12_screen/assets/backgrounds`：随包安装的 8 张 960×376 背景图；
+- `gem12_screen/assets/example_images`：随包安装的 9 张自行绘制的 960×376 示例图片，编号为 `01.jpg`～`09.jpg`，采用项目的 0BSD 许可证；
 - `examples/show_image.py`：只使用公共接口的调用示例；
 - `examples/show_dashboard.py`：只使用公共接口的动态模拟仪表示例；
 - `tests/test_protocol.py`：RGB565 和数据分块测试；
@@ -71,8 +71,8 @@
   - 同目录还包含 Linux 程序和用户主题资源。
 - `AOOSTAR-FAN_001/background`
   - 包含 8 张 960×376 JPEG 背景图；
-  - 已将 8 张图片原样复制到包内的 `gem12_screen/assets/backgrounds`，统一命名为 `background-01.jpg` 至 `background-08.jpg`；
-  - 运行时不再读取已被 Git 忽略的 `reference` 目录。
+  - 初期曾将这 8 张图片原样复制到包内，并命名为 `background-01.jpg` 至 `background-08.jpg`；现已全部替换为通过 `scripts/generate_example_images.py` 自行绘制的 9 张示例图片，编号为 `01.jpg` 至 `09.jpg`；
+  - 当前运行时只读取包内的 `gem12_screen/assets/example_images`，不读取已被 Git 忽略的 `reference` 目录。
 
 旧版程序中存在 `HidLibrary.dll` 和名为 `USBHIDCommunication` 的类，但其枚举目标是 `046D:C542`，而且没有进入实际屏幕发送链路。不能据此把屏幕误判为 HID 设备。
 
@@ -353,7 +353,7 @@ with Screen.connect(wake=False) as screen:
 uv run python examples/show_image.py
 ```
 
-Demo 使用 `Screen.connect()` 和 `screen.show()` 显示包内的 `background-02.jpg`，不直接调用任何内部协议函数。
+Demo 使用 `Screen.connect()` 和 `screen.show()` 显示包内的 `02.jpg`，不直接调用任何内部协议函数。
 
 ### 8.4 使用命令行
 
@@ -366,7 +366,7 @@ uv run gem12-screen
 默认图片为：
 
 ```text
-gem12_screen\assets\backgrounds\background-01.jpg
+gem12_screen\assets\example_images\01.jpg
 ```
 
 显示指定图片：
@@ -375,10 +375,10 @@ gem12_screen\assets\backgrounds\background-01.jpg
 uv run gem12-screen --image "D:\Pictures\screen.jpg"
 ```
 
-显示工程自带的第 2 张背景图：
+显示工程自带的第 2 张示例图片：
 
 ```powershell
-uv run gem12-screen --image ".\gem12_screen\assets\backgrounds\background-02.jpg"
+uv run gem12-screen --image ".\gem12_screen\assets\example_images\02.jpg"
 ```
 
 只发送开屏命令：
@@ -433,7 +433,7 @@ uv run gem12-screen --port COM3 --image ".\picture.jpg"
 
 ### 第一次
 
-- 图片：现命名为 `background-01.jpg`；
+- 图片：当时使用的官方背景图 `background-01.jpg`（现已从包内移除，非当前 `01.jpg`）；
 - 分辨率：960×376；
 - 串口：COM3；
 - 开屏响应：`41`；
@@ -442,7 +442,7 @@ uv run gem12-screen --port COM3 --image ".\picture.jpg"
 
 ### 第二次
 
-- 图片：现命名为 `background-02.jpg`；
+- 图片：当时使用的官方背景图 `background-02.jpg`（现已从包内移除，非当前 `02.jpg`）；
 - 分辨率：960×376；
 - 串口：COM3；
 - 开屏响应：`41`；
